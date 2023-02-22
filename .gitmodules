@@ -1,0 +1,6 @@
+[submodule "wasm3"]
+	path = wasm3
+	url = git@github.com:wasm3/wasm3.git
+[submodule "embench-iot"]
+	path = embench-iot
+	url = git@github.com:I-mikan-I/embench-iot.git
