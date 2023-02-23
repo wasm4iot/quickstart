@@ -17,10 +17,21 @@
         printf("Fatal: " msg "\n", ##__VA_ARGS__); \
         return;                                    \
     }
-#define BENCHMARK aha_mont64
-const char *names[] = {"aha_mont64", "crc32", "cubic", "edn", "huffbench", "matmult_int", "md5sum", "minver", "nbody", "nettle_aes", "nettle_sha256", "nsichneu", "picojpeg", "primecount", "qrduino", "sglib_combined", "slre", "st", "statemate", "tarfind", "ud", "wikisort"};
-const uint8_t *benchmarks[] = {aha_mont64, crc32, cubic, edn, huffbench, matmult_int, md5sum, minver, nbody, nettle_aes, nettle_sha256, nsichneu, picojpeg, primecount, qrduino, sglib_combined, slre, st, statemate, tarfind, ud, wikisort};
-const uint8_t *sizes[] = {sizeof(aha_mont64), sizeof(crc32), sizeof(cubic), sizeof(edn), sizeof(huffbench), sizeof(matmult_int), sizeof(md5sum), sizeof(minver), sizeof(nbody), sizeof(nettle_aes), sizeof(nettle_sha256), sizeof(nsichneu), sizeof(picojpeg), sizeof(primecount), sizeof(qrduino), sizeof(sglib_combined), sizeof(slre), sizeof(st), sizeof(statemate), sizeof(tarfind), sizeof(ud), sizeof(wikisort)};
+const char *names[] = {"aha_mont64", "crc32", "cubic", "edn", "huffbench", "matmult_int",
+                       "md5sum", "minver", "nbody", "nettle_aes", "nettle_sha256",
+                       "nsichneu", "picojpeg", "primecount", "qrduino", "sglib_combined",
+                       "slre", "st", "statemate", "tarfind", "ud", "wikisort"};
+const uint8_t *benchmarks[] = {aha_mont64, crc32, cubic, edn, huffbench, matmult_int,
+                               md5sum, minver, nbody, nettle_aes, nettle_sha256, nsichneu,
+                               picojpeg, primecount, qrduino, sglib_combined, slre, st,
+                               statemate, tarfind, ud, wikisort};
+const uint8_t *sizes[] = {sizeof(aha_mont64), sizeof(crc32), sizeof(cubic), sizeof(edn),
+                          sizeof(huffbench), sizeof(matmult_int), sizeof(md5sum),
+                          sizeof(minver), sizeof(nbody), sizeof(nettle_aes),
+                          sizeof(nettle_sha256), sizeof(nsichneu), sizeof(picojpeg),
+                          sizeof(primecount), sizeof(qrduino), sizeof(sglib_combined),
+                          sizeof(slre), sizeof(st), sizeof(statemate), sizeof(tarfind),
+                          sizeof(ud), sizeof(wikisort)};
 void run_wasm()
 {
     for (int i = 0; i < sizeof(benchmarks) / sizeof(uint8_t *); ++i)
@@ -78,5 +89,4 @@ int main()
     printf("\n");
     printf("Wasm3 v" M3_VERSION " on HiFive1 (" M3_ARCH "), build " __DATE__ " " __TIME__ "\n");
     run_wasm();
-
 }
