@@ -15,4 +15,6 @@ TODO
 - [x] Hifive1 (Rev B)
   - [x] [Wasm3](./targets/riscv32-unknown-none/hifive1/generic-wasm3/)
 - [x] SiPEED MAiX BiT
-  - [x] [Wasm3](./targets/riscv64-unknown-none/sipeed/maix-bit/)
+  - [x] [Wasm3](./targets/riscv64-unknown-none/sipeed/maix-bit/wasm3-embench/)
+- [x] SiPEED MAiX GO
+  - [x] [Wasm3](./targets/riscv64-unknown-none/sipeed/maix-go/wasm3-embench/)
