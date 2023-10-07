@@ -1,0 +1,4 @@
+.pio
+firmware.zip
+build
+libvm.a
