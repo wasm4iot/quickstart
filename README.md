@@ -4,14 +4,20 @@
 
 Clone with `git clone <...> --recursive`
 
-## Intoduction
+## Introduction
 
 TODO
 
+## Devcontainer
+
+To set up a development environment with the required toolchain, use the 
+[Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) Visual Studio Code plugin.
+
 ## Supported Platforms
 
-- [x] Raspberry Pi Zero
-  - [x] [Wasm3](./targets/arm-none-eabi/raspberry-pi-0/wasm3-embench/)
+- [x] NRF52840
+  - [x] [Wasm3](./targets/arm-none-eabi/nrf52840/wasm3-coremark/)
+  - [x] [WebAssembly Micro Runtime](./targets/arm-none-eabi/nrf52840/wamr-coremark/)
 - [x] Hifive1 (Rev B)
   - [x] [Wasm3](./targets/riscv32-unknown-none/hifive1/generic-wasm3/)
 - [x] SiPEED MAiX BiT
